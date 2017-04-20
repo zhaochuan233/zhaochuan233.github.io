@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | 长风的博客</title>
+  <title>安装和配置nodejs版本管理工具nvm | 长风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="长风的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="一、什么是nvm?为什么要用nvm nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。  这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装和配置nodejs版本管理工具nvm">
+<meta property="og:url" content="http://yoursite.com/2017/04/20/安装和配置nodejs版本管理工具nvm/index.html">
 <meta property="og:site_name" content="长风的博客">
+<meta property="og:description" content="一、什么是nvm?为什么要用nvm nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。  这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。">
+<meta property="og:updated_time" content="2017-04-20T06:20:34.232Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="长风的博客">
+<meta name="twitter:title" content="安装和配置nodejs版本管理工具nvm">
+<meta name="twitter:description" content="一、什么是nvm?为什么要用nvm nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。  这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。">
   
     <link rel="alternative" href="/atom.xml" title="长风的博客" type="application/atom+xml">
   
@@ -155,157 +160,175 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-安装和配置nodejs版本管理工具nvm" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      安装和配置nodejs版本管理工具nvm
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/20/安装和配置nodejs版本管理工具nvm/" class="archive-article-date">
+
+        
+        <a href="/2017/04/20/安装和配置nodejs版本管理工具nvm/" class="archive-article-date">
   	<time datetime="2017-04-20T06:13:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/20/安装和配置nodejs版本管理工具nvm/">安装和配置nodejs版本管理工具nvm</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、什么是nvm-为什么要用nvm"><a href="#一、什么是nvm-为什么要用nvm" class="headerlink" title="一、什么是nvm?为什么要用nvm"></a>一、什么是nvm?为什么要用nvm</h3><pre><code> nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。
+ 这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。
+ 那使用nvm的原因主要有以下几点：
+ 1.可安装多版本的node。
+2.灵活切换当前的node版本。
 
-        <div class="article-info info-on-right">
-          
-          
+3.以沙箱方式全局安装第三方组件到对应版本的node中。
 
+4.通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行。 
+</code></pre><h3 id="二、nvm的下载与安装"><a href="#二、nvm的下载与安装" class="headerlink" title="二、nvm的下载与安装"></a>二、nvm的下载与安装</h3><pre><code>1、[nvm下载点这里](https://github.com/coreybutler/nvm-windows/releases)
+不管下载哪个版本的，博主推荐下载nvm-noinstall.zip，即免安装版。
+
+ 2、解压并配置
+
+ (1)解压文件到你想解压的文件夹中，打开nvm下的settings.txt文件，修改root和path的路径为对应的解压路径，注意root指向的是nvm文件夹，path指向的是nodejs快捷方式文件夹（暂未生成）。
+[示例截图](安装和配置nodejs版本管理工具nvm/nvm-1.png)
+
+ (2)配置路径：
+
+  新建变量，变量名NPM_HOME 变量值指向nvm下的npm文件夹路径；
+  [示例截图](安装和配置nodejs版本管理工具nvm/nvm-2.png)
+  新建变量，变量名NVM_HOME 变量值指向nvm文件夹路径； 
+  [示例截图](安装和配置nodejs版本管理工具nvm/nvm-3.png)
+  新建变量，变量名NPM_SYMLINK 变量值指向nodejs快捷方式路径；
+  [示例截图](安装和配置nodejs版本管理工具nvm/nvm-4.png)
+  在path中添加%NPM_HOME%;%NVM_HOME%;%NVM_SYMLINK%;
+
+  注意：变量名一定要按NPM_HOME，NVM_HOME，NPM_SYMLINK的顺序排列，否则易出现未知名错误。
+
+3、测试
+
+打开cmd命令，输入nvm list；使用&quot;nvm use 版本号&quot;切换nodejs版本。
+[示例截图](安装和配置nodejs版本管理工具nvm/nvm-5.png)
+</code></pre>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/20/安装和配置nodejs版本管理工具nvm/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/20/使用github搭建不限流量的图床/" class="archive-article-date">
-  	<time datetime="2017-04-20T06:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/20/使用github搭建不限流量的图床/">使用github搭建不限流量的图床</a>
-    </h1>
+    <a href="/2017/04/20/使用github搭建不限流量的图床/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          使用github搭建不限流量的图床
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/20/hexo主题设置一/" class="archive-article-date">
-  	<time datetime="2017-04-20T05:57:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/20/hexo主题设置一/">hexo主题设置一</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/20/使用hexo和git在github上搭建个人博客/" class="archive-article-date">
-  	<time datetime="2017-04-20T05:54:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/20/使用hexo和git在github上搭建个人博客/">使用hexo和git在github上搭建个人博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/20/hello-world/" class="archive-article-date">
-  	<time datetime="2017-04-20T05:30:56.412Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -328,8 +351,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
