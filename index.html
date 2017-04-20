@@ -157,6 +157,56 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-安装和配置git" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/20/安装和配置git/">安装和配置git</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/20/安装和配置git/" class="archive-article-date">
+  	<time datetime="2017-04-20T11:31:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、什么是git？"><a href="#一、什么是git？" class="headerlink" title="一、什么是git？"></a>一、什么是git？</h3><p>Git是一款免费、开源的分布式版本控制系统。能自动记录你每次文件提交的变动，还可以让同事协助编辑，适用于项目操作。</p>
+<h3 id="二、下载和安装"><a href="#二、下载和安装" class="headerlink" title="二、下载和安装"></a>二、下载和安装</h3><p>1、下载地址：<a href="https://git-scm.com/download/win" target="_blank" rel="external">https://git-scm.com/download/win</a><br>2、解压和安装<br>3、配置环境变量<br>新建变量，变量名GIT_HOME 变量值为git安装路径<br><img src="/2017/04/20/安装和配置git/git-2.png" alt="示例截图"><br>在path中添加%GIT_HOME%\bin;<br>4、打开cmd，输入git –version验证<br><img src="/2017/04/20/安装和配置git/git-0.png" alt="示例截图"></p>
+<p>###附录<br><img src="/2017/04/20/安装和配置git/git-1.png" alt="示例截图"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/20/安装和配置git/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-安装和配置nodejs版本管理工具nvm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -178,9 +228,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="一、什么是nvm-为什么要用nvm"><a href="#一、什么是nvm-为什么要用nvm" class="headerlink" title="一、什么是nvm?为什么要用nvm"></a>一、什么是nvm?为什么要用nvm</h3><p>nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。<br>这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。<br>那使用nvm的原因主要有以下几点：<br>1.可安装多版本的node。<br>2.灵活切换当前的node版本。<br>3.以沙箱方式全局安装第三方组件到对应版本的node中。<br>4.通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行。 </p>
-<h3 id="二、nvm的下载与安装"><a href="#二、nvm的下载与安装" class="headerlink" title="二、nvm的下载与安装"></a>二、nvm的下载与安装</h3><p>1、<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">nvm下载点这里</a><br>    不管下载哪个版本的，博主推荐下载nvm-noinstall.zip，即免安装版。<br>2、解压并配置<br>解压文件到你想解压的文件夹中，打开nvm下的settings.txt文件，修改root和path的路径为对应的解压路径，注意root指向的是nvm文件夹，path指向的是nodejs快捷方式文件夹（暂未生成）。<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-1.png" alt="你想输入的替代文字"></p>
+<h3 id="二、nvm的下载与安装"><a href="#二、nvm的下载与安装" class="headerlink" title="二、nvm的下载与安装"></a>二、nvm的下载与安装</h3><p>1、<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">nvm下载点这里</a><br>    不管下载哪个版本的，博主推荐下载nvm-noinstall.zip，即免安装版。<br>2、解压并配置<br>解压文件到你想解压的文件夹中，打开nvm下的settings.txt文件，修改root和path的路径为对应的解压路径，注意root指向的是nvm文件夹，path指向的是nodejs快捷方式文件夹（暂未生成）。<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-1.png" alt="示例截图"></p>
 <p>(2)配置路径：</p>
-<p>新建变量，变量名NPM_HOME 变量值指向nvm下的npm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-2.png" alt="&quot;示例截图&quot;"></p>
+<p>新建变量，变量名NPM_HOME 变量值指向nvm下的npm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-2.png" alt="示例截图"></p>
 <p>新建变量，变量名NVM_HOME 变量值指向nvm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-3.png" alt="示例截图"></p>
 <p>新建变量，变量名NPM_SYMLINK 变量值指向nodejs快捷方式路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-4.png" alt="示例截图"></p>
 <p>在path中添加%NPM_HOME%;%NVM_HOME%;%NVM_SYMLINK%;</p>
@@ -358,8 +408,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、环境的准备"><a href="#一、环境的准备" class="headerlink" title="一、环境的准备"></a>一、环境的准备</h2><h3 id="安装和配置NodeJS，博文推荐：获取更多主题点这里"><a href="#安装和配置NodeJS，博文推荐：获取更多主题点这里" class="headerlink" title="安装和配置NodeJS，博文推荐：获取更多主题点这里"></a><1>安装和配置NodeJS，博文推荐：<a href="https://zhaochuan233.github.io/2017/04/20/%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEnodejs%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7nvm/" target="_blank" rel="external">获取更多主题点这里</a></1></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如果是第一次安装nodejs，建议安装完后重启电脑，否则在后面使用命令安装hexo时很有可能会提示你命令无效，因此建议先重启电脑。</div></pre></td></tr></table></figure>
-<h3 id="安装和配置Git。博文推荐："><a href="#安装和配置Git。博文推荐：" class="headerlink" title="安装和配置Git。博文推荐："></a><2>安装和配置Git。博文推荐：</2></h3><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a><3>安装hexo</3></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">快捷键windows+R打开cmd;输入命令npm install hexo-cli -g</div></pre></td></tr></table></figure>
+        <h2 id="一、环境的准备"><a href="#一、环境的准备" class="headerlink" title="一、环境的准备"></a>一、环境的准备</h2><h3 id="安装和配置NodeJS，博文推荐：安装和配置nodejs版本管理工具nvm"><a href="#安装和配置NodeJS，博文推荐：安装和配置nodejs版本管理工具nvm" class="headerlink" title="安装和配置NodeJS，博文推荐：安装和配置nodejs版本管理工具nvm"></a><1>安装和配置NodeJS，博文推荐：<a href="https://zhaochuan233.github.io/2017/04/20/%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEnodejs%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7nvm/" target="_blank" rel="external">安装和配置nodejs版本管理工具nvm</a></1></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如果是第一次安装nodejs，建议安装完后重启电脑，否则在后面使用命令安装hexo时很有可能会提示你命令无效，因此建议先重启电脑。</div></pre></td></tr></table></figure>
+<h3 id="安装和配置Git。博文推荐：安装和配置nodejs版本管理工具nvm"><a href="#安装和配置Git。博文推荐：安装和配置nodejs版本管理工具nvm" class="headerlink" title="安装和配置Git。博文推荐：安装和配置nodejs版本管理工具nvm"></a><2>安装和配置Git。博文推荐：<a href="">安装和配置nodejs版本管理工具nvm</a></2></h3><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a><3>安装hexo</3></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">快捷键windows+R打开cmd;输入命令npm install hexo-cli -g</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span>命令进入路径如 d盘，md命令创建放置博客文件的文件夹（如blog文件夹，文件名及路径最好不要有中文）。<span class="built_in">cd</span>进入blog文件夹,执行命令hexo init初始化文件夹，npm install安装依赖包，执行</div><div class="line">hexo   generate和hexo server命令，然后浏览器打开http://localhost:4000在本地查看博客首页。</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">补充：了解几个hexo常用的命令</div><div class="line">(a) hexo g <span class="comment">#完整命令hexo generate 用于生成静态文件</span></div><div class="line">(b) hexo s <span class="comment">#完整命令hexo server 用于启动服务器，在本地预览</span></div><div class="line">(c) hexo d <span class="comment">#完整命令 hexo deploy 用于将本地文件发布到github上</span></div><div class="line">(d) hexo n <span class="comment">#完整命令 hexo new 用于新建一篇文章</span></div><div class="line">(f) hexo init 用于初始化博客文件根目录</div></pre></td></tr></table></figure>
 <h2 id="二、注册github"><a href="#二、注册github" class="headerlink" title="二、注册github"></a>二、注册github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">地址：https://github.com/</div></pre></td></tr></table></figure>

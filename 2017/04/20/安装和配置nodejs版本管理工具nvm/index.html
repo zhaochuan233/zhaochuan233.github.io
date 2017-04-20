@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://yoursite.com/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-3.png">
 <meta property="og:image" content="http://yoursite.com/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-4.png">
 <meta property="og:image" content="http://yoursite.com/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-5.png">
-<meta property="og:updated_time" content="2017-04-20T10:57:27.557Z">
+<meta property="og:updated_time" content="2017-04-20T12:07:18.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安装和配置nodejs版本管理工具nvm">
 <meta name="twitter:description" content="一、什么是nvm?为什么要用nvmnodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。那使用">
@@ -187,9 +187,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="一、什么是nvm-为什么要用nvm"><a href="#一、什么是nvm-为什么要用nvm" class="headerlink" title="一、什么是nvm?为什么要用nvm"></a>一、什么是nvm?为什么要用nvm</h3><p>nodejs大家都知道，是一种开源软件，但也因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱。<br>这时候，我们可以选择一些nodejs的版本管理工具来解决这一问题，博主在这里推荐的是nodejs，因为其他的版本管理工具博主也不是很了解。<br>那使用nvm的原因主要有以下几点：<br>1.可安装多版本的node。<br>2.灵活切换当前的node版本。<br>3.以沙箱方式全局安装第三方组件到对应版本的node中。<br>4.通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行。 </p>
-<h3 id="二、nvm的下载与安装"><a href="#二、nvm的下载与安装" class="headerlink" title="二、nvm的下载与安装"></a>二、nvm的下载与安装</h3><p>1、<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">nvm下载点这里</a><br>    不管下载哪个版本的，博主推荐下载nvm-noinstall.zip，即免安装版。<br>2、解压并配置<br>解压文件到你想解压的文件夹中，打开nvm下的settings.txt文件，修改root和path的路径为对应的解压路径，注意root指向的是nvm文件夹，path指向的是nodejs快捷方式文件夹（暂未生成）。<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-1.png" alt="你想输入的替代文字"></p>
+<h3 id="二、nvm的下载与安装"><a href="#二、nvm的下载与安装" class="headerlink" title="二、nvm的下载与安装"></a>二、nvm的下载与安装</h3><p>1、<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external">nvm下载点这里</a><br>    不管下载哪个版本的，博主推荐下载nvm-noinstall.zip，即免安装版。<br>2、解压并配置<br>解压文件到你想解压的文件夹中，打开nvm下的settings.txt文件，修改root和path的路径为对应的解压路径，注意root指向的是nvm文件夹，path指向的是nodejs快捷方式文件夹（暂未生成）。<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-1.png" alt="示例截图"></p>
 <p>(2)配置路径：</p>
-<p>新建变量，变量名NPM_HOME 变量值指向nvm下的npm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-2.png" alt="&quot;示例截图&quot;"></p>
+<p>新建变量，变量名NPM_HOME 变量值指向nvm下的npm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-2.png" alt="示例截图"></p>
 <p>新建变量，变量名NVM_HOME 变量值指向nvm文件夹路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-3.png" alt="示例截图"></p>
 <p>新建变量，变量名NPM_SYMLINK 变量值指向nodejs快捷方式路径；<br><img src="/2017/04/20/安装和配置nodejs版本管理工具nvm/nvm-4.png" alt="示例截图"></p>
 <p>在path中添加%NPM_HOME%;%NVM_HOME%;%NVM_SYMLINK%;</p>
@@ -297,6 +297,11 @@
       </div>
     </a>
   
+  
+    <a href="/2017/04/20/安装和配置git/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安装和配置git</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
