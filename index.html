@@ -157,6 +157,125 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo主题设置一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/20/hexo主题设置一/">hexo主题设置一</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/20/hexo主题设置一/" class="archive-article-date">
+  	<time datetime="2017-04-20T05:57:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、安装主题（以yilia为例）"><a href="#一、安装主题（以yilia为例）" class="headerlink" title="一、安装主题（以yilia为例）"></a>一、安装主题（以yilia为例）</h2><p><a href="https://hexo.io/plugins/" target="_blank" rel="external">获取更多主题点这里</a></p>
+<h3 id="1、在你的本地博客根目录下克隆主题："><a href="#1、在你的本地博客根目录下克隆主题：" class="headerlink" title="1、在你的本地博客根目录下克隆主题："></a>1、在你的本地博客根目录下克隆主题：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git themes/yilia;</div></pre></td></tr></table></figure>
+<h3 id="2、打开根目录下的-config-yml文件，修改对应的theme值"><a href="#2、打开根目录下的-config-yml文件，修改对应的theme值" class="headerlink" title="2、打开根目录下的_config.yml文件，修改对应的theme值;"></a>2、打开根目录下的_config.yml文件，修改对应的theme值;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme:yilia</div></pre></td></tr></table></figure>
+<h3 id="3、自动部署并发布："><a href="#3、自动部署并发布：" class="headerlink" title="3、自动部署并发布："></a>3、自动部署并发布：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+<h3 id="4、稍等一会然后登陆你的博客就会发现主题已经更新成功。"><a href="#4、稍等一会然后登陆你的博客就会发现主题已经更新成功。" class="headerlink" title="4、稍等一会然后登陆你的博客就会发现主题已经更新成功。"></a>4、稍等一会然后登陆你的博客就会发现主题已经更新成功。</h3><h2 id="二、主题配置（修改头像以及其他信息）"><a href="#二、主题配置（修改头像以及其他信息）" class="headerlink" title="二、主题配置（修改头像以及其他信息）"></a>二、主题配置（修改头像以及其他信息）</h2><p>如何上传令你自己满意的头像，这牵扯到一个图床问题，在这里我就不一一赘述了，<a href="https://hexo.io/plugins/" target="_blank" rel="external">获取更多信息点这里</a></p>
+<h3 id="1、进入根目录下的themes-yilia文件夹，打开-config-yml文件进行配置。例："><a href="#1、进入根目录下的themes-yilia文件夹，打开-config-yml文件进行配置。例：" class="headerlink" title="1、进入根目录下的themes\yilia文件夹，打开_config.yml文件进行配置。例："></a>1、进入根目录下的themes\yilia文件夹，打开_config.yml文件进行配置。例：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header</span></div><div class="line">menu:</div><div class="line">  主页: /</div><div class="line">  所有文章: /archives</div><div class="line">  随笔: /tags/随笔/</div><div class="line"></div><div class="line"><span class="comment"># SubNav    地址链接</span></div><div class="line">subnav:</div><div class="line">  github: <span class="string">"https://github.com/zhaochuan233"</span></div><div class="line">  weibo: <span class="string">"#"</span></div><div class="line">  rss: <span class="string">"#"</span></div><div class="line">  zhihu: <span class="string">"#"</span></div><div class="line">  <span class="comment">#qq: "#"</span></div><div class="line">  <span class="comment">#weixin: "#"</span></div><div class="line">  <span class="comment">#jianshu: "#"</span></div><div class="line">  <span class="comment">#douban: "#"</span></div><div class="line">  <span class="comment">#segmentfault: "#"</span></div><div class="line">  <span class="comment">#bilibili: "#"</span></div><div class="line">  <span class="comment">#acfun: "#"</span></div><div class="line">  <span class="comment">#mail: "mailto:litten225@qq.com"</span></div><div class="line">  <span class="comment">#facebook: "#"</span></div><div class="line">  <span class="comment">#google: "#"</span></div><div class="line">  <span class="comment">#twitter: "#"</span></div><div class="line">  <span class="comment">#linkedin: "#"</span></div><div class="line"></div><div class="line">rss: /atom.xml</div><div class="line"></div><div class="line"><span class="comment"># 是否需要修改 root 路径</span></div><div class="line"><span class="comment"># 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，</span></div><div class="line"><span class="comment"># 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。</span></div><div class="line">root:</div><div class="line"></div><div class="line"><span class="comment"># Content</span></div><div class="line"></div><div class="line"><span class="comment"># 文章太长，截断按钮文字</span></div><div class="line">excerpt_link: more</div><div class="line"><span class="comment"># 文章卡片右下角常驻链接，不需要请设置为false</span></div><div class="line">show_all_link: <span class="string">'展开全文'</span></div><div class="line"><span class="comment"># 数学公式</span></div><div class="line">mathjax: <span class="literal">false</span></div><div class="line"><span class="comment"># 是否在新窗口打开链接</span></div><div class="line">open_in_new: <span class="literal">false</span></div><div class="line"></div><div class="line"><span class="comment"># 打赏</span></div><div class="line"><span class="comment"># 请在需要打赏的文章的md文件头部，设置属性reward: true</span></div><div class="line"></div><div class="line"><span class="comment"># 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏</span></div><div class="line">reward_type: 2</div><div class="line"><span class="comment"># 打赏wording</span></div><div class="line">reward_wording: <span class="string">'谢谢你请我吃糖果'</span></div><div class="line"><span class="comment"># 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg</span></div><div class="line">alipay:</div><div class="line"><span class="comment"># 微信二维码图片地址</span></div><div class="line">weixin:</div><div class="line"></div><div class="line"><span class="comment"># Miscellaneous</span></div><div class="line">baidu_analytics: <span class="string">''</span></div><div class="line">google_analytics: <span class="string">''</span></div><div class="line">favicon: /favicon.png</div><div class="line"></div><div class="line"><span class="comment">#你的头像url  即上方提到的图床问题</span></div><div class="line">avatar: <span class="string">"https://github.com/zhaochuan233/images/raw/master/huge/t01102f1a357c731248.jpg"</span></div><div class="line"></div><div class="line"><span class="comment">#是否开启分享</span></div><div class="line">share_jia: <span class="literal">true</span></div><div class="line"></div><div class="line"><span class="comment">#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key</span></div><div class="line"><span class="comment">#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论</span></div><div class="line">duoshuo: <span class="literal">false</span></div><div class="line"></div><div class="line"><span class="comment"># 样式定制 - 一般不需要修改，除非有很强的定制欲望…</span></div><div class="line">style:</div><div class="line">  <span class="comment"># 头像上面的背景颜色</span></div><div class="line">  header: <span class="string">'#4d4d4d'</span></div><div class="line">  <span class="comment"># 右滑板块背景</span></div><div class="line">  slider: <span class="string">'linear-gradient(200deg,#a0cfe4,#e8c37e)'</span></div><div class="line"></div><div class="line"><span class="comment"># slider的设置</span></div><div class="line">slider:</div><div class="line">  <span class="comment"># 是否默认展开tags板块</span></div><div class="line">  showTags: <span class="literal">false</span></div><div class="line"></div><div class="line"><span class="comment"># 智能菜单</span></div><div class="line"><span class="comment"># 如不需要，将该对应项置为false</span></div><div class="line"><span class="comment"># 比如</span></div><div class="line"><span class="comment">#smart_menu:</span></div><div class="line"><span class="comment">#  friends: false</span></div><div class="line">smart_menu:</div><div class="line">  innerArchive: <span class="string">'所有文章'</span></div><div class="line">  friends: <span class="string">'友链'</span></div><div class="line">  aboutme: <span class="string">'关于我'</span></div><div class="line"></div><div class="line">friends:</div><div class="line">  友情链接1: http://localhost:4000/</div><div class="line">  友情链接2: http://localhost:4000/</div><div class="line">  友情链接3: http://localhost:4000/</div><div class="line">  友情链接4: http://localhost:4000/</div><div class="line">  友情链接5: http://localhost:4000/</div><div class="line">  友情链接6: http://localhost:4000/</div><div class="line"></div><div class="line"><span class="comment">#是否开启“关于我”。</span></div><div class="line"><span class="comment">#不开启——</span></div><div class="line"><span class="comment">#aboutme: false</span></div><div class="line"><span class="comment">#开启——</span></div><div class="line">aboutme: 谢谢大家！</div></pre></td></tr></table></figure>
+<h3 id="2、配置完成后，回到根目录下，部署并发布"><a href="#2、配置完成后，回到根目录下，部署并发布" class="headerlink" title="2、配置完成后，回到根目录下，部署并发布"></a>2、配置完成后，回到根目录下，部署并发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/20/hexo主题设置一/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-使用hexo和git在github上搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/20/使用hexo和git在github上搭建个人博客/">使用hexo和git在github上搭建个人博客</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/20/使用hexo和git在github上搭建个人博客/" class="archive-article-date">
+  	<time datetime="2017-04-20T05:54:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、环境的准备"><a href="#一、环境的准备" class="headerlink" title="一、环境的准备"></a>一、环境的准备</h2><h3 id="安装和配置NodeJS，博文推荐："><a href="#安装和配置NodeJS，博文推荐：" class="headerlink" title="安装和配置NodeJS，博文推荐："></a><1>安装和配置NodeJS，博文推荐：</1></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如果是第一次安装nodejs，建议安装完后重启电脑，否则在后面使用命令安装hexo时很有可能会提示你命令无效，因此建议先重启电脑。</div></pre></td></tr></table></figure>
+<h3 id="安装和配置Git。博文推荐："><a href="#安装和配置Git。博文推荐：" class="headerlink" title="安装和配置Git。博文推荐："></a><2>安装和配置Git。博文推荐：</2></h3><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a><3>安装hexo</3></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">快捷键windows+R打开cmd;输入命令npm install hexo-cli -g;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span>命令进入路径如 d盘，md命令创建放置博客文件的文件夹（如blog文件夹，文件名及路径最好不要有中文）。<span class="built_in">cd</span>进入blog文件夹,执行命令hexo init初始化文件夹，npm install安装依赖包，执行</div><div class="line">hexo   generate和hexo server命令，然后浏览器打开http://localhost:4000在本地查看博客首页。</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">补充：了解几个hexo常用的命令</div><div class="line">(a) hexo g <span class="comment">#完整命令hexo generate 用于生成静态文件</span></div><div class="line">(b) hexo s <span class="comment">#完整命令hexo server 用于启动服务器，在本地预览</span></div><div class="line">(c) hexo d <span class="comment">#完整命令 hexo deploy 用于将本地文件发布到github上</span></div><div class="line">(d) hexo n <span class="comment">#完整命令 hexo new 用于新建一篇文章</span></div><div class="line">(f) hexo init 用于初始化博客文件根目录</div></pre></td></tr></table></figure>
+<h2 id="二、注册github"><a href="#二、注册github" class="headerlink" title="二、注册github"></a>二、注册github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">地址：https://github.com/</div></pre></td></tr></table></figure>
+<h2 id="三、ssh链接"><a href="#三、ssh链接" class="headerlink" title="三、ssh链接"></a>三、ssh链接</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">打开git根目录，双击git-bash.exe;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">输入<span class="built_in">cd</span>~/.ssh</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">执行如下命令，生成一个新的ssh key;</div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span>;</div><div class="line">执行命令后会要求确认路径和输入密码，为减少麻烦可一律回车无需设置。</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">链接github</div><div class="line"></div><div class="line">第&lt;3&gt;步执行完后若成功会在C:\Users\Administrator下生成一个.ssh文件夹，进入该文件，打开id_rsa.pub，复制里面的key。登录github,进入Settings,选择SSH and GPG Keys,创建新的SSH Key,将复制的key值粘贴到key内。</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">验证是否连接到github</div><div class="line">$ ssh -T git@github.com</div><div class="line">如果是第一次创建会提示是否<span class="built_in">continue</span>，输入yes就会看到：You<span class="string">'ve successfully authenticated,but GitHub does not provide shell access,这就表示已经成功连接到Github了。</span></div></pre></td></tr></table></figure>
+<h2 id="四、上传本地博客系统到github"><a href="#四、上传本地博客系统到github" class="headerlink" title="四、上传本地博客系统到github"></a>四、上传本地博客系统到github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">登录github，创建一个新的repository，Repository name用用户名加.github.io,如我的用户名是zhaochuan233,我的新repository name:<span class="string">"zhaochuan233.github.io"</span>。</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">回到本地blog根目录，进入_config.yml文件，修改内容如下：</div><div class="line"></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: git@github.com:zhaochuan233/zhaochuan233.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">在blog运行cmd,执行如下命令，为项目安装插件</div><div class="line">$ npm install hexo-deployer-git --save;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">上传本地blog系统</div><div class="line">$ hexo deploy -g;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">验证是否成功</div><div class="line">打开浏览器，输入用户名.github.io,如：<span class="string">"https://zhaochuan233.github.io"</span>;</div></pre></td></tr></table></figure>
+<h2 id="五、博客的使用"><a href="#五、博客的使用" class="headerlink" title="五、博客的使用"></a>五、博客的使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">创建一篇新博客</div><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">运行服务器</div><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">生成静态文件</div><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">上传到远程站点</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/20/使用hexo和git在github上搭建个人博客/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
